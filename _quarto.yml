@@ -4,12 +4,20 @@ project:
 
 website:
   title: "test-ojs"
-  site-path: "/test-ojs/" # try github repo name
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+
+  sidebar:
+    - id: none
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: posts
+      sort:
+        - "date desc"
 
 format:
   html:
